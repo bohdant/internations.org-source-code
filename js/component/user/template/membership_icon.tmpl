@@ -1,0 +1,35 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="membershipTooltip\n    ';
+ if (tooltip) { 
+__p+='\n        membershipTooltip-hoverable\n    ';
+ } 
+__p+='\n    ';
+ if (user.isAdmin) { 
+__p+='\n        membershipTooltip-admin\n    ';
+ } else if (user.isAmbassador) { 
+__p+='\n        membershipTooltip-ambassador\n    ';
+ } else if (user.isConsul) { 
+__p+='\n        membershipTooltip-consul\n    ';
+ } else if (user.isNewcomerBuddy) { 
+__p+='\n        membershipTooltip-newcomerBuddy\n    ';
+ } else if (user.isAlbatross) { 
+__p+='\n        membershipTooltip-albatross\n    ';
+ } 
+__p+='"\n    >\n    <i class="icon membershipTooltip__icon\n        ';
+ if (user.isAdmin) { 
+__p+='\n            icon-albatross-white\n        ';
+ } else if (user.isAmbassador) { 
+__p+='\n            icon-ambassador-red\n        ';
+ } else if (user.isConsul) { 
+__p+='\n            icon-consul-darkBlue\n        ';
+ } else if (user.isNewcomerBuddy) { 
+__p+='\n            icon-newcomerBuddy-darkBlue\n        ';
+ } else if (user.isAlbatross) { 
+__p+='\n            icon-albatross-midBlue\n        ';
+ } 
+__p+='"\n    ></i>\n</div>\n\n';
+}
+return __p;
+};

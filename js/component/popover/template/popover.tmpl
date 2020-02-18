@@ -1,0 +1,13 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="popover '+
+((__t=( extraClasses ))==null?'':_.escape(__t))+
+'">\n    <div class="arrow"></div>\n    <div class="popover-inner">\n        ';
+ if (showClose) { 
+__p+='\n            <button class="js-popover-close popover__close iconParent" type="button">\n                <span class="popover__closeText">Close</span>\n                <i class="icon icon-crossRound-midGrey icon-crossRound-midBlue-hover"></i>\n            </button>\n        ';
+ } 
+__p+='\n        <div class="popover-content"></div>\n    </div>\n</div>\n';
+}
+return __p;
+};

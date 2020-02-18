@@ -1,0 +1,15 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="'+
+((__t=( domClass ))==null?'':_.escape(__t))+
+'">\n\n    <span class="js-component-user-name"></span>\n\n    ';
+ if (user.workplaceCompany) { 
+__p+='\n        <div class="t-user-preview-property userPreview__property">\n             '+
+((__t=( user.workplaceCompany ))==null?'':_.escape(__t))+
+'\n        </div>\n    ';
+ } 
+__p+='\n\n    <div class="js-component-flags"></div>\n</div>\n';
+}
+return __p;
+};

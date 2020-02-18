@@ -1,0 +1,29 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="teaser teaser-large teaser-event">\n    <div class="teaser__stationary">\n        <div class="js-sticker teaser__sticker u-hideBelowTablet-inline"></div>\n        <a class="u-block" href="'+
+((__t=( link.image ))==null?'':_.escape(__t))+
+'">\n            <img class="teaser__image u-hideAboveTablet" src="'+
+((__t=( event.imageMobile ))==null?'':_.escape(__t))+
+'" alt="" />\n            <img class="teaser__image u-hideBelowTablet-inline" src="'+
+((__t=( event.imageLarge ))==null?'':_.escape(__t))+
+'" alt="" />\n        </a>\n    </div>\n    <div class="teaser__narrowing">\n        <div class="teaser__surtitle u-hideBelowTablet-block">\n            '+
+((__t=( event.surtitle ))==null?'':_.escape(__t))+
+'\n        </div>\n        <div class="teaser__content">\n            <div class="teaser__headline">\n                <a class="teaser__titleLink" href="'+
+((__t=( link.title ))==null?'':_.escape(__t))+
+'">\n                    <span class="u-hideAboveTablet">'+
+((__t=( event.shortTitleMobile ))==null?'':_.escape(__t))+
+'</span>\n                    <span class="u-hideBelowTablet-inline">'+
+((__t=( event.shortTitle ))==null?'':_.escape(__t))+
+'</span>\n                </a>\n            </div>\n            <div class="teaser__subcontent">\n                <i class="icon icon-xsmall icon-clock-midGrey"></i>\n                <span class="teaser__metaDate">'+
+((__t=( event.weekday ))==null?'':_.escape(__t))+
+' '+
+((__t=( event.date ))==null?'':_.escape(__t))+
+'</span>\n                <span class="teaser__metaInfo">'+
+((__t=( event.time ))==null?'':_.escape(__t))+
+'</span>\n\n                <div class="u-hideBelowTablet-block">\n                    <i class="icon icon-xsmall icon-user-midGrey"></i>\n                    <span class="teaser__metaInfo">\n                        '+
+((__t=( event.attendeeCountText ))==null?'':_.escape(__t))+
+'\n                    </span>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n';
+}
+return __p;
+};

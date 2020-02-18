@@ -1,0 +1,17 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="userTeaser whiteBox whiteBox-noSpacing">\n    <div class="userTeaser__header">\n        Contact Requests\n    </div>\n\n    ';
+ if (state.loading) { 
+__p+='\n        <div class="spinner u-sizeFill u-spaceTop u-spaceBottom"></div>\n    ';
+ } else if (state.empty) { 
+__p+='\n        <div class="js-users-empty"></div>\n    ';
+ } else { 
+__p+='\n        <div class="js-users-list userTeaser__users u-spaceBottom"></div>\n        <a class="blockLink" href="'+
+((__t=( link.all ))==null?'':_.escape(__t))+
+'">\n            <i class="icon icon-large icon-forward-midBlue icon-spaceRight"></i>\n            See all contact requests\n        </a>\n    ';
+ } 
+__p+='\n</div>\n';
+}
+return __p;
+};

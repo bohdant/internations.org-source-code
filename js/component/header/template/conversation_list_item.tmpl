@@ -1,0 +1,23 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<a class="t-header-message-link headerFlyoutList__wrap__headerMessageFlyoutNotificationItem"\n    href="'+
+((__t=( link.conversation ))==null?'':_.escape(__t))+
+'">\n    <div class="headerMessageFlyoutNotificationItem';
+ if (!conversation.isRead) { 
+__p+=' is-unread ';
+ } 
+__p+='">\n        <div class="headerMessageFlyoutNotificationItem__wrap__userPreview">\n            <div class="js-conversation-user"></div>\n        </div>\n\n        ';
+ if (conversation.type === 'group' && conversation.participantCount > 0) { 
+__p+='\n            <div class="headerMessageFlyoutNotificationItem__participantsCount">\n                +'+
+((__t=( conversation.participantCount ))==null?'':_.escape(__t))+
+'\n            </div>\n        ';
+ } 
+__p+='\n\n        <div class="headerMessageFlyoutNotificationItem__title">\n            '+
+((__t=( conversation.text ))==null?'':_.escape(__t))+
+'\n        </div>\n\n        <div class="headerMessageFlyoutNotificationItem__time">\n            '+
+((__t=( conversation.lastMessageOn ))==null?'':_.escape(__t))+
+'\n        </div>\n    </div>\n</a>\n';
+}
+return __p;
+};

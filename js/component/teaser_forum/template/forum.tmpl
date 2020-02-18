@@ -1,0 +1,25 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ /* allowHtmlVariables entry.smallUser.userHtml */ 
+__p+='\n<div class="teaser teaser-small teaser-forum">\n    <div class="teaser__stationary">\n        '+
+((__t=( entry.smallUser.userHtml ))==null?'':__t)+
+'\n    </div>\n    <div class="teaser__narrowing">\n        <div class="teaser__content">\n            <div class="teaser__headline">\n                <a class="teaser__titleLink" href="'+
+((__t=( link.title ))==null?'':_.escape(__t))+
+'">\n                    <span class="u-hideAboveTablet">'+
+((__t=( entry.headlineMobile ))==null?'':_.escape(__t))+
+'</span>\n                    <span class="u-hideBelowTablet-inline">'+
+((__t=( entry.headline ))==null?'':_.escape(__t))+
+'</span>\n                </a>\n            </div>\n            <div class="teaser__subcontent">\n                ';
+ if (entry.postCount) { 
+__p+='\n                    <span class="teaser__metaInfo u-spaceRight u-hideBelowTablet-inline">\n                        <span class="teaser__metaInfoIcon">\n                            <i class="icon icon-small icon-forum-midGrey"></i>\n                        </span>\n                        '+
+((__t=( entry.postCountText ))==null?'':_.escape(__t))+
+'\n                    </span>\n                ';
+ } 
+__p+='\n                <span class="teaser__metaInfo">\n                    <i class="icon icon-tag-midGrey"></i>\n                    '+
+((__t=( entry.category ))==null?'':_.escape(__t))+
+'\n                </span>\n            </div>\n        </div>\n    </div>\n</div>\n';
+}
+return __p;
+};

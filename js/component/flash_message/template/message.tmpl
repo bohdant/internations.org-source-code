@@ -1,0 +1,19 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ /* allowHtmlVariables message.message */ 
+__p+='\n<div class="t-flash-message t-flash-message-'+
+((__t=( message.type ))==null?'':_.escape(__t))+
+' js-flash-message flashMessage flashMessage-'+
+((__t=( message.type ))==null?'':_.escape(__t))+
+' u-noMargin">\n    '+
+((__t=( message.message ))==null?'':__t)+
+'\n    ';
+ if (message.closeable) { 
+__p+='\n         <div class="t-flash-message-close js-flash-message-close flashMessage__close"></div>\n    ';
+ } 
+__p+='\n</div>\n';
+}
+return __p;
+};

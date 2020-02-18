@@ -1,0 +1,28 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="userPreview__icons">\n    ';
+ if (user.countryOfOriginCode.iocCode === user.countryOfResidencyCode.iocCode) { 
+__p+='\n        <i class="t-flag userPreview__icon flag-16 flag-'+
+((__t=( user.countryOfOriginCode.iocCode ))==null?'':_.escape(__t))+
+'" title="From and living in '+
+((__t=( user.countryOfOriginCode.name ))==null?'':_.escape(__t))+
+'"></i>\n    ';
+ } else { 
+__p+='\n        <i class="t-flag userPreview__icon flag-16 flag-'+
+((__t=( user.countryOfOriginCode.iocCode ))==null?'':_.escape(__t))+
+'" title="From '+
+((__t=( user.countryOfOriginCode.name ))==null?'':_.escape(__t))+
+'"></i>';
+
+        
+__p+='<i class="t-flag userPreview__icon flag-16 flag-'+
+((__t=( user.countryOfResidencyCode.iocCode ))==null?'':_.escape(__t))+
+'" title="Living in '+
+((__t=( user.countryOfResidencyCode.name ))==null?'':_.escape(__t))+
+'"></i>\n    ';
+ } 
+__p+='\n</div>\n';
+}
+return __p;
+};

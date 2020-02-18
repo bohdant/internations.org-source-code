@@ -1,0 +1,35 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<span class="userPreview__imageWrapper">\n    ';
+ if (disableLink) { 
+__p+='\n        <span class="'+
+((__t=( domClass ))==null?'':_.escape(__t))+
+'"></span>\n    ';
+ } else { 
+__p+='\n        <a class="'+
+((__t=( domClass ))==null?'':_.escape(__t))+
+'"\n            href="'+
+((__t=( link.image ))==null?'':_.escape(__t))+
+'"\n            ';
+ if (registrationTrigger) { 
+__p+='\n                data-registration-trigger="'+
+((__t=( registrationTrigger ))==null?'':_.escape(__t))+
+'"\n            ';
+ } 
+__p+='\n            ';
+ if (userCard) { 
+__p+='\n                data-popover-url="'+
+((__t=( link.userCard ))==null?'':_.escape(__t))+
+'"\n            ';
+ } 
+__p+='\n           ></a>\n    ';
+ } 
+__p+='\n\n    ';
+ if (showMembershipIcon) { 
+__p+='\n        <div class="js-component-membershipIcon userPreview__wrap__membershipTooltip"></div>\n    ';
+ } 
+__p+='\n</span>\n';
+}
+return __p;
+};

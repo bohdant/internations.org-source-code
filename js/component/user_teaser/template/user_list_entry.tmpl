@@ -1,0 +1,27 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ /* allowHtmlVariables userEntry.buttonHtml, userEntry.userHtml */ 
+__p+='\n<div class="userListEntry userListEntry-teaser';
+ if (options.masked) { 
+__p+=' userListEntry-masked';
+ } 
+__p+='">\n    <div class="userListEntry__row">\n        ';
+ if (userEntry.buttonHtml) { 
+__p+='\n            <div class="userListEntry__column userListEntry__buttonColumn">\n                '+
+((__t=( userEntry.buttonHtml ))==null?'':__t)+
+'\n            </div>\n        ';
+ } 
+__p+='\n\n        <div class="js-teaser-user userListEntry__column userListEntry__userColumn"></div>\n\n        ';
+ if (userEntry.description) { 
+__p+='\n            <div class="userListEntry__column userListEntry__infoColumn userTeaser__additionalInfo"\n                title="'+
+((__t=( userEntry.description ))==null?'':_.escape(__t))+
+'">\n                '+
+((__t=( userEntry.descriptionShort ))==null?'':_.escape(__t))+
+'\n            </div>\n        ';
+ } 
+__p+='\n    </div>\n</div>\n';
+}
+return __p;
+};

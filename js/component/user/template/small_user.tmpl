@@ -1,0 +1,9 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="userPreview userPreview-smallUser userPreview-'+
+((__t=( size ))==null?'':_.escape(__t))+
+'">\n    <div class="js-component-user-image-link"></div>\n    <div class="js-user-info"></div>\n</div>\n';
+}
+return __p;
+};

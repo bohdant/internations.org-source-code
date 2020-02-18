@@ -1,0 +1,29 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ if (conversations.loading) { 
+__p+='\n    <div class="headerFlyoutTitle headerFlyoutTitle-withCounter headerFlyoutTitle-messages">\n        <div class="headerFlyoutTitle__wrap__icon">\n            <i class="icon icon-messages-darkBlue"></i>\n        </div>\n        <span class="headerFlyoutTitle__text">Messages</span>\n    </div>\n    <div class="headerFlyout__wrap__spinner">\n        <div class="spinner u-blockCenter"></div>\n    </div>\n';
+ } else { 
+__p+='\n    <div class="headerFlyoutTitle headerFlyoutTitle-withCounter headerFlyoutTitle-messages">\n        <div class="headerFlyoutTitle__wrap__icon">\n            <i class="icon icon-messages-darkBlue"></i>\n        </div>\n        ';
+ if (conversations.total) { 
+__p+='\n            <div class="js-count-header headerFlyoutTitle__wrap__counterBadge"></div>\n        ';
+ } 
+__p+='\n        <span class="headerFlyoutTitle__text">Messages</span>\n    </div>\n\n    ';
+ if (!conversations.total) { 
+__p+='\n        <div class="headerFlyout__empty">You have no messages</div>\n        <div class="headerFlyout__separator"></div>\n    ';
+ } else { 
+__p+='\n        <ul class="js-conversations-list headerFlyoutList"></ul>\n    ';
+ } 
+__p+='\n\n    <a class="headerFlyoutMore" href="'+
+((__t=( link.allMessages ))==null?'':_.escape(__t))+
+'">\n        <i class="icon icon-forward-midBlue"></i>\n        All messages\n        ';
+ if (conversations.unreadCount) { 
+__p+='\n            (<span class="js-count-results"></span> unread)\n        ';
+ } 
+__p+='\n    </a>\n';
+ } 
+__p+='\n';
+}
+return __p;
+};

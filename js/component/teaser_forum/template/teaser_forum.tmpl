@@ -1,0 +1,19 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="whiteBox whiteBox-noSpacing">\n    ';
+ if (state.loading) { 
+__p+='\n        <div class="spinner u-sizeFill u-spaceTop u-spaceBottom"></div>\n    ';
+ } else { 
+__p+='\n\n        <div class="u-hideBelowTablet-block">\n            <div class="sticker sticker-grey u-spaceTopL u-spaceLeft">'+
+((__t=( sticker.text ))==null?'':_.escape(__t))+
+'</div>\n        </div>\n\n        ';
+ // Teasers get appended here 
+__p+='\n        <div class="js-teaser-list listOfItems listOfItems-noSpacing"></div>\n\n        <a class="blockLink" href="'+
+((__t=( link.forum ))==null?'':_.escape(__t))+
+'">\n            <i class="icon icon-large icon-forum-midBlue icon-spaceRight"></i>\n            Go to Forum\n        </a>\n    ';
+ } 
+__p+='\n</div>\n';
+}
+return __p;
+};

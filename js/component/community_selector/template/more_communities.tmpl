@@ -1,0 +1,13 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<a class="headerFlyoutMore" href="/all-internations-communities?ref=he_sac">\n    <i class="icon icon-forward-midBlue"></i>\n    Show all InterNations Communities\n    ';
+ if (search.totalResultCount) { 
+__p+='\n        ('+
+((__t=( search.totalResultCount ))==null?'':_.escape(__t))+
+')\n    ';
+ } 
+__p+='\n</a>\n';
+}
+return __p;
+};

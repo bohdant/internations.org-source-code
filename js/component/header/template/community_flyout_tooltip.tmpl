@@ -1,0 +1,11 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="communityFlyoutTooltip">\n    <div class="communityFlyoutTooltip__header">\n        Customize your InterNations experience\n    </div>\n\n    <div class="communityFlyoutTooltip__section">\n        <div class="communityFlyoutTooltip__sectionContent">\n            The content you see depends on the InterNations Community you select here. Choose the one which is closest to your current location.\n        </div>\n    </div>\n\n    <div class="communityFlyoutTooltip__section">\n        <span class="communityFlyoutTooltip__sectionDecoration">\n            <i class="icon icon-xlarge icon-home-darkBlue"></i>\n        </span>\n        <div class="communityFlyoutTooltip__sectionContent">\n            When you log in, this is always set to the InterNations Community selected in your profile.\n            <div class="communityFlyoutTooltip__homeCommunity">\n                Currently: InterNations '+
+((__t=( community.name ))==null?'':_.escape(__t))+
+'\n            </div>\n            If you have moved to another city, please <a href="'+
+((__t=( community.updateHomeCommunityUrl ))==null?'':_.escape(__t))+
+'">update this in your profile</a>.\n        </div>\n    </div>\n\n    <div class="communityFlyoutTooltip__section">\n        <span class="communityFlyoutTooltip__sectionDecoration">\n            <i class="icon icon-xlarge icon-travel-darkBlue"></i>\n        </span>\n        <div class="communityFlyoutTooltip__sectionContent">\n            If you are just visiting a city, select the InterNations Community from this list to see what\'s happening there.\n        </div>\n    </div>\n</div>\n';
+}
+return __p;
+};

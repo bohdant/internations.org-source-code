@@ -1,0 +1,17 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='\n<div class="t-teaser-groups-mobile js-groups-teaser-mobile whiteBox whiteBox-noSpacing u-hideAboveTablet u-spaceBottom">\n    <div class="spinner u-sizeFill u-spaceAround"></div>\n</div>\n\n<div class="t-teaser-groups-above-mobile startPage__teaser startPage__teaserToLeft u-hideBelowTablet-block">\n    <div class="whiteBox whiteBox-noSpacing">\n        <div class="js-groups-teaser-above-mobile listOfItems listOfItems-noSpacing"></div>\n\n        ';
+ if (state.loading) { 
+__p+='\n            <div class="spinner u-sizeFill u-spaceAround"></div>\n        ';
+ } 
+__p+='\n\n        ';
+ if (!state.empty) { 
+__p+='\n            <a class="blockLink" href="'+
+((__t=( link.allGroups ))==null?'':_.escape(__t))+
+'">\n                <i class="icon icon-large icon-group-midBlue icon-spaceRight"></i>\n                Go to Groups\n            </a>\n        ';
+ } 
+__p+='\n    </div>\n</div>\n\n';
+}
+return __p;
+};

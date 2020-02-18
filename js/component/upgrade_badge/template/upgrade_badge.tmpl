@@ -1,0 +1,15 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<a class="t-upgrade-badge js-upgrade-badge upgradeBadge ';
+ if (options.isSticky) { 
+__p+='is-sticky';
+ } 
+__p+='" href="'+
+((__t=( url ))==null?'':_.escape(__t))+
+'">\n    <i class="icon icon-albatross-white icon-xxlarge u-spaceHalfLeft"></i>\n    '+
+((__t=( text ))==null?'':_.escape(__t))+
+'\n</a>\n';
+}
+return __p;
+};

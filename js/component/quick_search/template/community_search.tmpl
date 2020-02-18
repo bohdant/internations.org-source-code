@@ -1,0 +1,19 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="headerFlyoutTitle">\n    Communities <span class="js-community-counter-title headerFlyoutTitle__simpleCounter"></span>\n</div>\n';
+ if (!initialized || (initialized && !text)) { 
+__p+='\n    <div class="headerFlyout__empty">\n        Start typing to see results…\n    </div>\n';
+ } else { 
+__p+='\n    ';
+ if (totalResultCount) { 
+__p+='\n        <ul class="js-communities-collection headerFlyoutList headerFlyoutList-noHover"></ul>\n        <a class="js-navigation-item js-communities-more headerFlyoutMore headerFlyoutMore-noHover"\n            href="/all-internations-communities?ref=he_acr">\n            <i class="icon icon-forward-midBlue"></i>\n            See all results <span class="js-community-counter-link headerFlyoutTitle__simpleCounter"></span>\n        </a>\n    ';
+ } else { 
+__p+='\n        <div class="headerFlyout__empty">\n            No results in communities\n        </div>\n    ';
+ } 
+__p+='\n';
+ } 
+__p+='\n';
+}
+return __p;
+};

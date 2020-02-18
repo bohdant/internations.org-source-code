@@ -1,0 +1,21 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ /* allowHtmlVariables community.nameHighlight, community.countryNameHighlight */ 
+__p+='\n<div class="communitySearchResult">\n    <i class="communitySearchResult__flag flag-24 flag-'+
+((__t=( community.countryCode ))==null?'':_.escape(__t))+
+'"></i><!--\n    --><span class="communitySearchResult__city">\n        '+
+((__t=( community.nameHighlight ? community.nameHighlight : community.name ))==null?'':__t)+
+'\n    </span><!--\n    --><span class="communitySearchResult__country">\n        '+
+((__t=( community.countryNameHighlight ? community.countryNameHighlight : community.countryName ))==null?'':__t)+
+'\n    </span>\n    ';
+ if (state.info && typeof community.distance !== 'undefined') { 
+__p+='\n        <span class="communitySearchResult__info">'+
+((__t=( community.distance ))==null?'':_.escape(__t))+
+' km</span>\n    ';
+ } 
+__p+='\n</div>\n';
+}
+return __p;
+};

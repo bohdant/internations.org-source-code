@@ -1,0 +1,25 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="teaser teaser-large teaser-groupLarge">\n    <div class="teaser__stationary">\n        <div class="teaser__sticker u-hideBelowTablet-inline">\n            <div class="sticker sticker-green">\n                '+
+((__t=( group.category ))==null?'':_.escape(__t))+
+'\n            </div>\n        </div>\n        <a class="u-block" href="'+
+((__t=( link.image ))==null?'':_.escape(__t))+
+'">\n            <img class="teaser__image u-hideBelowTablet-block" src="'+
+((__t=( group.imageLarge ))==null?'':_.escape(__t))+
+'" alt="" />\n            <img class="teaser__image u-hideAboveTablet" src="'+
+((__t=( group.imageMobile ))==null?'':_.escape(__t))+
+'" alt="" />\n        </a>\n    </div>\n    <div class="teaser__narrowing">\n        <div class="teaser__content">\n            <div class="teaser__headline">\n                <a class="t-teaser-title-link teaser__titleLink" href="'+
+((__t=( link.title ))==null?'':_.escape(__t))+
+'">\n                    <span class="u-hideAboveTablet">'+
+((__t=( group.nameMobile ))==null?'':_.escape(__t))+
+'</span>\n                    <span class="u-hideBelowTablet-inline">'+
+((__t=( group.name ))==null?'':_.escape(__t))+
+'</span>\n                </a>\n            </div>\n            <div class="teaser__subcontent">\n                <div class="teaser__metaInfo">\n                    <span class="teaser__metaInfoIcon">\n                        <i class="icon icon-small icon-group-midGrey"></i>\n                    </span>\n                    '+
+((__t=( group.memberCountText ))==null?'':_.escape(__t))+
+'\n                </div>\n                <div class="teaser__metaInfo u-hideBelowTablet-block">\n                    <span class="teaser__metaInfoIcon">\n                        <i class="icon icon-small icon-nationality-midGrey"></i>\n                    </span>\n                    from  '+
+((__t=( group.nationalityCountText ))==null?'':_.escape(__t))+
+'\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n';
+}
+return __p;
+};

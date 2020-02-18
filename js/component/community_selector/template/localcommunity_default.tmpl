@@ -1,0 +1,13 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ if (search.loading) { 
+__p+='\n    <div class="headerFlyout__wrap__spinner">\n        <div class="spinner u-blockCenter"></div>\n    </div>\n';
+ } else { 
+__p+='\n    <ul class="js-nearby-communities headerFlyoutList headerFlyoutList-noHover headerFlyoutList-noLastSeparator"></ul>\n';
+ } 
+__p+='\n';
+}
+return __p;
+};

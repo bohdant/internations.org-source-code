@@ -1,0 +1,13 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<a class="headerFlyoutList__wrap__headerMessageFlyoutNotificationItem"\n    href="'+
+((__t=( link.twinkle ))==null?'':_.escape(__t))+
+'">\n    <div class="headerMessageFlyoutNotificationItem is-unread">\n        <div class="headerMessageFlyoutNotificationItem__wrap__userPreview">\n            <div class="js-twinkle-user"></div>\n        </div>\n\n        <div class="headerMessageFlyoutNotificationItem__title">\n            '+
+((__t=( twinkle.senderName ))==null?'':_.escape(__t))+
+' twinkled you\n        </div>\n\n        <div class="headerMessageFlyoutNotificationItem__time">\n            '+
+((__t=( twinkle.createdOn ))==null?'':_.escape(__t))+
+'\n        </div>\n    </div>\n</a>\n';
+}
+return __p;
+};

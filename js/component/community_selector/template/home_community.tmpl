@@ -1,0 +1,19 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="communitySearchResult">\n    <i class="communitySearchResult__flag flag-24 flag-'+
+((__t=( community.countryCode ))==null?'':_.escape(__t))+
+'"></i>\n    <span class="communitySearchResult__city">\n        <a class="js-back-link headerHomeCommunity__backLink" href="javascript:void(0)">\n            Back to\n        </a>\n        '+
+((__t=( community.name ))==null?'':_.escape(__t))+
+'\n    </span>\n    <span class="communitySearchResult__country">\n        '+
+((__t=( community.countryName ))==null?'':_.escape(__t))+
+'\n    </span>\n    ';
+ if (community.canEditLocalCommunity) { 
+__p+='\n        <span class="communitySearchResult__info">\n            <span class="headerHomeCommunity__moved">\n                <span class="headerHomeCommunity__movedText">\n                    Moved?\n                </span>\n                <a class="t-update-community-link js-update-community-link headerHomeCommunity__movedCommunityLink"\n                    href="'+
+((__t=( community.updateHomeCommunityUrl ))==null?'':_.escape(__t))+
+'">\n                    Change <span class="headerHomeCommunity__movedCommunityText">community</span>\n                </a>\n            </span>\n        </span>\n    ';
+ } 
+__p+='\n</div>\n';
+}
+return __p;
+};

@@ -1,0 +1,21 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ /* allowHtmlVariables user.microUserMarkup, user.nameHighlight, user.companyHighlight */ 
+__p+='\n<a class="userSearchResult userSearchResult-flyoutList" href="'+
+((__t=( link.profile ))==null?'':_.escape(__t))+
+'">\n    <div class="userSearchResult__wrap__userPreview">\n        '+
+((__t=( user.microUserMarkup ))==null?'':__t)+
+'\n    </div>\n    <span class="userSearchResult__name">\n        '+
+((__t=( user.nameHighlight ? user.nameHighlight : user.firstName + ' ' + user.lastName ))==null?'':__t)+
+'\n    </span>\n    ';
+ if (user.workplaceCompany) { 
+__p+='\n        <span class="userSearchResult__company">\n            '+
+((__t=( user.companyHighlight ? user.companyHighlight : user.workplaceCompany ))==null?'':__t)+
+'\n        </span>\n    ';
+ } 
+__p+='\n</a>\n';
+}
+return __p;
+};

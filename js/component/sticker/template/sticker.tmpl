@@ -1,0 +1,19 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<span class="sticker sticker-'+
+((__t=( sticker.color ))==null?'':_.escape(__t))+
+'\n    ';
+ if (options.block) { 
+__p+='\n        sticker-block\n    ';
+ } 
+__p+='\n    ';
+ if (options.smallMobile) { 
+__p+='\n        sticker-smallBelowTablet\n    ';
+ } 
+__p+='">'+
+((__t=( sticker.text ))==null?'':_.escape(__t))+
+'</span>\n';
+}
+return __p;
+};

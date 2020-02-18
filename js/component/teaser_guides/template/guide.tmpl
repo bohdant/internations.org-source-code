@@ -1,0 +1,19 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="teaser teaser-small teaser-guide">\n  <div class="teaser__stationary">\n      <a href="'+
+((__t=( link.image ))==null?'':_.escape(__t))+
+'">\n          <img class="teaser__image" src="'+
+((__t=( guide.imageSmall ))==null?'':_.escape(__t))+
+'" alt="" />\n      </a>\n  </div>\n  <div class="teaser__narrowing">\n      <div class="teaser__headline">\n          <a class="teaser__titleLink" href="'+
+((__t=( link.title ))==null?'':_.escape(__t))+
+'">\n              <span class="u-hideAboveTablet">'+
+((__t=( guide.titleMobile ))==null?'':_.escape(__t))+
+'</span>\n              <span class="u-hideBelowTablet-inline">'+
+((__t=( guide.title ))==null?'':_.escape(__t))+
+'</span>\n          </a>\n      </div>\n      <div class="teaser__subcontent">\n         <span class="teaser__metaInfo">\n             <i class="icon icon-tag-midGrey"></i>\n             '+
+((__t=( guide.typeLabel ))==null?'':_.escape(__t))+
+'\n         </span>\n      </div>\n  </div>\n</div>\n';
+}
+return __p;
+};

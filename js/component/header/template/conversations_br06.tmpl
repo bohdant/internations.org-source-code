@@ -1,0 +1,25 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ if (conversations.loading) { 
+__p+='\n    <div class="headerFlyoutTitle">\n        Messages\n    </div>\n    <div class="headerFlyout__wrap__spinner">\n        <div class="spinner u-blockCenter"></div>\n    </div>\n';
+ } else { 
+__p+='\n    <div class="headerFlyout__headingWrapperBR06">\n        <div class="headerFlyout__headingBR06">\n            Messages\n        </div>\n        ';
+ if (conversations.total) { 
+__p+='\n            <div class="js-count-header u-halfSpaceLeft"></div>\n        ';
+ } 
+__p+='\n        <a class="u-marginAutoLeft" href="'+
+((__t=( link.allMessages ))==null?'':_.escape(__t))+
+'">\n            All messages<i class="icon icon-arrowright"></i>\n        </a>\n    </div>\n\n    ';
+ if (conversations.total) { 
+__p+='\n        <ul class="js-conversations-list headerFlyoutList"></ul>\n    ';
+ } else { 
+__p+='\n        <div class="headerFlyout__empty">You have no messages</div>\n    ';
+ } 
+__p+='\n';
+ } 
+__p+='\n';
+}
+return __p;
+};

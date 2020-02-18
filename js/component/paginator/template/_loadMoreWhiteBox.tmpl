@@ -1,0 +1,15 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ if (isLoading) { 
+__p+='\n    <div class="ajax__status-messages">\n        <span class="js-paginator-loading is-loading"></span>\n    </div>\n';
+ } 
+__p+='\n\n';
+ if (!hideLoadMoreButton) { 
+__p+='\n    <div class="js-paginator-load-more u-borderTop">\n        <button class="blockLink">\n            <span class="u-flexAlignButtonContent">\n                Show more\n            </span>\n        </button>\n    </div>\n';
+ } 
+__p+='\n';
+}
+return __p;
+};

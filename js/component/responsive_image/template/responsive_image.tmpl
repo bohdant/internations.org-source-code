@@ -1,0 +1,35 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<picture class="responsiveImage';
+ if (options.imageScale) { 
+__p+=' responsiveImage-scale';
+ } 
+__p+='">\n    ';
+ for (var i = 0; i < imagesData.images.length - 1; i++) { 
+__p+='\n        <source class="responsiveImage';
+ if (options.imageScale) { 
+__p+=' responsiveImage-scale';
+ } 
+__p+='"\n            srcset="'+
+((__t=( imagesData.images[i].srcset ))==null?'':_.escape(__t))+
+'"\n            media="(max-width: '+
+((__t=( imagesData.images[i].size ))==null?'':_.escape(__t))+
+'px)">\n    ';
+ } 
+__p+='\n    <img class="responsiveImage';
+ if (options.imageScale) { 
+__p+=' responsiveImage-scale';
+ } 
+__p+='"\n        src="'+
+((__t=( imagesData.defaultImage ))==null?'':_.escape(__t))+
+'"\n        srcset="'+
+((__t=( imagesData.images[imagesData.images.length - 1].srcset ))==null?'':_.escape(__t))+
+'"\n        alt="'+
+((__t=( imagesData.alt ))==null?'':_.escape(__t))+
+'"\n        title="'+
+((__t=( imagesData.title ))==null?'':_.escape(__t))+
+'">\n</picture>\n';
+}
+return __p;
+};

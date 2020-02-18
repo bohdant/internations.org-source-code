@@ -1,0 +1,33 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ /* allowHtmlVariables entry.mediumUser.userHtml */ 
+__p+='\n<div class="teaser teaser-large teaser-forumLarge">\n    <div class="teaser__stationary">\n        <div class="teaser__user">'+
+((__t=( entry.mediumUser.userHtml ))==null?'':__t)+
+'</div>\n        <div class="teaser__forumTitle">\n            <div class="teaser__headline">\n                <a class="teaser__titleLink" href="'+
+((__t=( link.title ))==null?'':_.escape(__t))+
+'">\n                    <span class="u-hideAboveTablet">'+
+((__t=( entry.headlineMobile ))==null?'':_.escape(__t))+
+'</span>\n                    <span class="u-textEllipsis u-hideBelowTablet-inline">'+
+((__t=( entry.headline ))==null?'':_.escape(__t))+
+'</span>\n                </a>\n            </div>\n            ';
+ if (entry.postCount) { 
+__p+='\n                <span class="teaser__metaInfo u-spaceRight u-hideBelowTablet-inline">\n                    <span class="teaser__metaInfoIcon">\n                        <i class="icon icon-small icon-forum-midGrey"></i>\n                    </span>\n                    '+
+((__t=( entry.postCountText ))==null?'':_.escape(__t))+
+'\n                </span>\n            ';
+ } 
+__p+='\n            <span class="teaser__metaInfo">\n                <i class="icon icon-tag-midGrey"></i>\n                '+
+((__t=( entry.category ))==null?'':_.escape(__t))+
+'\n            </span>\n        </div>\n    </div>\n    <div class="teaser__narrowing">\n        <div class="teaser__forumPreview u-hideBelowTablet-block u-wordWrap">\n            <p class="u-noMargin u-halfSpaceTop">\n                <a class="teaser__forumPreviewText" href="'+
+((__t=( link.more ))==null?'':_.escape(__t))+
+'" title="Read post">\n                    '+
+((__t=( entry.shortPreview ))==null?'':_.escape(__t))+
+'\n                    ';
+ if (entry.preview !== entry.shortPreview) {
+__p+='\n                        <span class="link">more</span>\n                    ';
+ } 
+__p+='\n                </a>\n            </p>\n        </div>\n    </div>\n</div>\n';
+}
+return __p;
+};

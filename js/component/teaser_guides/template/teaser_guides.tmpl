@@ -1,0 +1,15 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="whiteBox whiteBox-noSpacing">\n    ';
+ if (state.loading) { 
+__p+='\n        <div class="spinner u-sizeFill u-spaceTop u-spaceBottom"></div>\n    ';
+ } else { 
+__p+='\n        <div class="js-teaser-guides listOfItems listOfItems-noSpacing"></div>\n\n        <a class="blockLink" href="'+
+((__t=( link.allGuides ))==null?'':_.escape(__t))+
+'">\n            <i class="icon icon-large icon-guide-midBlue icon-spaceRight"></i>\n            Go to Guide\n        </a>\n    ';
+ } 
+__p+='\n</div>\n';
+}
+return __p;
+};

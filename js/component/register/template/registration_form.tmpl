@@ -1,0 +1,97 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ /* allowHtmlVariables item, text, title, buttonText, brandedContent, redirectMessage, isGermanLanguage, promotion, designVariant, isContentGerman */ 
+__p+='\n<form class="t-registration-form t-registration-form-variant-'+
+((__t=( designVariant ))==null?'':_.escape(__t))+
+' '+
+((__t=( designVariant ))==null?'':_.escape(__t))+
+'RegistrationForm"\n    action="'+
+((__t=( postUrl ))==null?'':_.escape(__t))+
+'"\n    method="post">\n    <div class="u-spaceBottom u-textCenter">\n        <h1 class="checklistRegistrationForm__title u-noMargin">\n            '+
+((__t=( title ))==null?'':__t)+
+'\n        </h1>\n        <p class="checklistRegistrationForm__text u-halfSpaceTop';
+ if (checklist && !showCopyBelowTablet) { 
+__p+=' u-hideBelowTablet-block';
+ } 
+__p+='">\n            '+
+((__t=( text ))==null?'':__t)+
+'\n        </p>\n    </div>\n\n     ';
+ if (designVariant === 'businessRedirect') { 
+__p+='\n         <div class="checklistRegistrationForm__checklist u-spaceBottom u-hideAboveTablet">\n            <div class="checklistRegistrationForm__checklistBox">\n                 <p class="u-spaceLeft">\n                    '+
+((__t=( redirectMessage ))==null?'':__t)+
+'\n                </p>\n                <span class="badgeSponsored u-alignRight u-spaceLeft u-spaceRight"></span>\n            </div>\n        </div>\n    ';
+ } else { 
+__p+='\n        <div class="checklistRegistrationForm__checklist u-spaceBottom u-hideAboveTablet">\n            <div class="checklistRegistrationForm__checklistBox">\n                <ul class="checkList checkList-large u-quarterSpaceBottom">\n                    ';
+ checklist.belowTablet.forEach(function(item) { 
+__p+='\n                    <li class="checkList__item">\n                        <i class="checkList__itemIcon icon icon-doneFat-yellow"></i>\n                        <p class="checkList__itemText">\n                            '+
+((__t=( item ))==null?'':__t)+
+'\n                        </p>\n                    </li>\n                    ';
+ }) 
+__p+='\n                </ul>\n                ';
+ if (brandedContent) {
+__p+='\n                    <span class="badgeSponsored u-alignRight u-spaceLeft"></span>\n                ';
+ } 
+__p+='\n            </div>\n        </div>\n    ';
+ } 
+__p+='\n\n    <div class="checklistRegistrationForm__drawnArrowContainer ';
+ if (brandedContent) {
+__p+=' u-hideBelowTablet-block';
+ } 
+__p+='">\n        <div class="checklistRegistrationForm__drawnArrowTopRight">\n            <i class="icon icon-drawnArrowRight checklistRegistrationForm__drawnArrowIcon"></i>\n        </div>\n    </div>\n\n    <div class="checklistRegistrationForm__formElements '+
+((__t=( !brandedContent ? 'u-halfSpaceBottom' : 'u-spaceBottom' ))==null?'':__t)+
+'">\n        <div class="checklistRegistrationForm__input">\n            <div class="formField formField-noMargin formField-large">\n                <input class="t-registration-form-email js-registration-form-email formField__input" name="email" placeholder="'+
+((__t=( isGermanLanguage ? 'Email-Adresse eingeben...' : 'Enter your email address...'))==null?'':__t)+
+'" data-hj-suppress >\n            </div>\n        </div>\n        <div>\n            <button class="t-modal-join-now-button js-registration-form-submit btn btn-largeAboveTablet" type="submit">\n                ';
+ if (buttonText) { 
+__p+='\n                    '+
+((__t=( buttonText ))==null?'':__t)+
+'\n                ';
+ } else { 
+__p+='\n                    Join now\n                ';
+ } 
+__p+='\n            </button>\n        </div>\n    </div>\n\n    ';
+ if (designVariant === 'checklistWithPromotion') { 
+__p+='\n        <div class="u-hideBelowTablet-block">\n            <ul class="checklistRegistrationForm__promotion">\n                <li class="checklistRegistrationForm__promotionItem">\n                    <i class="pictogram pictogram-membershipNetworking u-quarterSpaceTop"></i>\n                    <p class="checklistRegistrationForm__promotionText">'+
+((__t=( promotion.forum ))==null?'':__t)+
+'</p>\n                </li>\n                <li class="checklistRegistrationForm__promotionItem">\n                    <i class="pictogram pictogram-membershipEvents u-quarterSpaceTop"></i>\n                    <p class="checklistRegistrationForm__promotionText">'+
+((__t=( promotion.event ))==null?'':__t)+
+'</p>\n                </li>\n                <li class="checklistRegistrationForm__promotionItem">\n                    <i class="pictogram pictogram-membershipGuides u-quarterSpaceTop"></i>\n                    <p class="checklistRegistrationForm__promotionText">'+
+((__t=( promotion.guide ))==null?'':__t)+
+'</p>\n                </li>\n            </ul>\n        <div>\n    ';
+ } 
+__p+='\n\n    ';
+ if (designVariant === 'businessRedirect') { 
+__p+='\n         <div class="checklistRegistrationForm__checklist u-spaceBottom u-hideBelowTablet-block">\n            <div class="checklistRegistrationForm__checklistBox">\n                <p class="u-spaceLeft">\n                    '+
+((__t=( redirectMessage ))==null?'':__t)+
+'\n                </p>\n                <span class="badgeSponsored u-alignRight u-spaceLeft u-spaceRight"></span>\n            </div>\n        </div>\n    ';
+ } 
+__p+='\n\n    ';
+ if (designVariant === 'checklist') { 
+__p+='\n        <div class="checklistRegistrationForm__checklist u-spaceBottom u-hideBelowTablet-block">\n            <div class="checklistRegistrationForm__checklistBox">\n                <ul class="checkList checkList-large u-quarterSpaceBottom">\n                    ';
+ checklist.aboveTablet.forEach(function(item) { 
+__p+='\n                        <li class="checkList__item">\n                            <i class="checkList__itemIcon icon icon-doneFat-yellow"></i>\n                            <p class="checkList__itemText">\n                                '+
+((__t=( item ))==null?'':__t)+
+'\n                            </p>\n                        </li>\n                    ';
+ }) 
+__p+='\n                </ul>\n                ';
+ if (brandedContent) {
+__p+='\n                    <span class="badgeSponsored u-alignRight u-spaceLeft"></span>\n                ';
+ } 
+__p+='\n            </div>\n        </div>\n    ';
+ } 
+__p+='\n\n    <div class="u-textCenter u-spaceBottom">\n        ';
+ if (isGermanLanguage) {
+__p+='\n            Bereits Mitglied? <a href="'+
+((__t=( loginUrl ))==null?'':_.escape(__t))+
+'">Hier einloggen</a>.\n        ';
+ } else { 
+__p+='\n            Already a member? <a href="'+
+((__t=( loginUrl ))==null?'':_.escape(__t))+
+'">Log in here</a>.\n        ';
+ } 
+__p+='\n    </div>\n\n</form>\n';
+}
+return __p;
+};

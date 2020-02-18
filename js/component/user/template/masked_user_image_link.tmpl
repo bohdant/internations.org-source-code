@@ -1,0 +1,15 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<span class="userPreview__imageWrapper">\n    <a class="js-component-user-image js-paywall-masked-user-image userPreview__imageLink"\n        data-name="'+
+((__t=( trackingOptions.name ))==null?'':_.escape(__t))+
+'"\n        data-css-class="t-modal modal"\n        data-href="'+
+((__t=( path ))==null?'':_.escape(__t))+
+'"\n        href="javascript:void(0);">\n    </a>\n\n    ';
+ if (showMembershipIcon) { 
+__p+='\n        <div class="js-component-membershipIcon userPreview__wrap__membershipTooltip"></div>\n    ';
+ } 
+__p+='\n</span>\n';
+}
+return __p;
+};

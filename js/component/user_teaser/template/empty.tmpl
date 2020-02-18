@@ -1,0 +1,13 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="userTeaser__empty">\n    <div class="userTeaser__wrap__userPicture">\n        <a class="userPicture" href="javascript:void(0)"></a>\n    </div>\n    <div class="userTeaser__emptyText">\n        <div class="userTeaser__emptyTitle">'+
+((__t=( empty.title ))==null?'':_.escape(__t))+
+'</div>\n        <a class="userTeaser__emptyLink" href="'+
+((__t=( empty.link ))==null?'':_.escape(__t))+
+'">\n            '+
+((__t=( empty.linkText ))==null?'':_.escape(__t))+
+'\n        </a>\n    </div>\n</div>\n';
+}
+return __p;
+};

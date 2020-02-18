@@ -1,0 +1,31 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<span class="maskedText__title">\n    ';
+ if (!disableLink) { 
+__p+='\n        <a class="'+
+((__t=( domClass ))==null?'':_.escape(__t))+
+'"\n            data-name="'+
+((__t=( trackingOptions.name ))==null?'':_.escape(__t))+
+'"\n            data-css-class="t-modal modal"\n            data-href="'+
+((__t=( path ))==null?'':_.escape(__t))+
+'"\n            ';
+ if (registrationTrigger) { 
+__p+='\n                data-registration-trigger="'+
+((__t=( registrationTrigger ))==null?'':_.escape(__t))+
+'"\n            ';
+ } 
+__p+='\n            href="javascript:void(0);">\n    ';
+ } 
+__p+='\n\n    <i class="maskedText__icon icon icon-lock-darkBlue"></i>\n    <span class="u-hideAboveTablet">'+
+((__t=( title ))==null?'':_.escape(__t))+
+'</span>\n    <span class="u-hideBelowTablet-inline">'+
+((__t=( titleAboveTablet ))==null?'':_.escape(__t))+
+'</span>\n\n    ';
+ if (!disableLink) { 
+__p+='\n        </a>\n    ';
+ } 
+__p+='\n</span>\n';
+}
+return __p;
+};

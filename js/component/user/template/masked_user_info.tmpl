@@ -1,0 +1,17 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="userPreview__userInfo\n    ';
+ if (size === 'large') { 
+__p+='userPreview__userInfo-spaceTop';
+ } 
+__p+='">\n    <div class="maskedText">\n        <div class="js-masked-user-name"></div>\n        <a class="js-masked-user-info-link js-paywall-masked-user maskedText__link"\n            href="javascript:void(0);"\n            data-name="'+
+((__t=( trackingOptions.name ))==null?'':_.escape(__t))+
+'"\n            data-css-class="t-modal modal"\n            data-href="'+
+((__t=( path ))==null?'':_.escape(__t))+
+'">\n            <span class="maskedText__linkText">\n                '+
+((__t=( hasActiveFreeTrialOffer ? 'Start free trial' : 'Upgrade now' ))==null?'':_.escape(__t))+
+'\n            </span>\n            <i class="icon icon-xsmall icon-spaceLeft icon-arrowright-yellow"></i>\n        </a>\n    </div>\n    <div class="js-component-flags"></div>\n</div>\n';
+}
+return __p;
+};

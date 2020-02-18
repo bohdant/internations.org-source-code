@@ -1,0 +1,31 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ if (disableLink) { 
+__p+='\n    <span class="userName userName-noHover ';
+ if (hyphenateUsername) { 
+__p+='u-wordWrap';
+ } 
+__p+='">\n        '+
+((__t=( user.fullName ))==null?'':_.escape(__t))+
+'\n    </span>\n';
+ } else { 
+__p+='\n    <a class="'+
+((__t=( domClass ))==null?'':_.escape(__t))+
+'"\n        href="'+
+((__t=( link.username ))==null?'':_.escape(__t))+
+'"\n        ';
+ if (userCard) { 
+__p+='\n            data-popover-url="'+
+((__t=( link.userCard ))==null?'':_.escape(__t))+
+'"\n        ';
+ } 
+__p+='\n        >'+
+((__t=( user.fullName ))==null?'':_.escape(__t))+
+'</a>\n';
+ } 
+__p+='';
+}
+return __p;
+};

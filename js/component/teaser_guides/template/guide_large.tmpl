@@ -1,0 +1,27 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="teaser teaser-large teaser-guideLarge">\n    <div class="teaser__stationary">\n        <div class="teaser__sticker u-hideBelowTablet-inline">\n            <div class="sticker sticker-darkBlue">\n                '+
+((__t=( guide.stickerLabel ))==null?'':_.escape(__t))+
+'\n            </div>\n        </div>\n        <a href="'+
+((__t=( link.image ))==null?'':_.escape(__t))+
+'">\n            <img class="teaser__image" src="'+
+((__t=( guide.imageLarge ))==null?'':_.escape(__t))+
+'" alt="" />\n        </a>\n        <div class="teaser__infoOverImage u-hideBelowTablet-block">\n            <div class="teaser__headline">\n                <a class="teaser__surtitle" href="'+
+((__t=( link.surtitle ))==null?'':_.escape(__t))+
+'">'+
+((__t=( guide.surtitle ))==null?'':_.escape(__t))+
+'</a>\n                <a class="teaser__titleLink" href="'+
+((__t=( link.title ))==null?'':_.escape(__t))+
+'">'+
+((__t=( guide.title ))==null?'':_.escape(__t))+
+'</a>\n            </div>\n        </div>\n    </div>\n    <div class="teaser__narrowing u-hideAboveTablet">\n        <div class="teaser__headline">\n            <a class="teaser__titleLink" href="'+
+((__t=( link.title ))==null?'':_.escape(__t))+
+'">'+
+((__t=( guide.titleMobile ))==null?'':_.escape(__t))+
+'</a>\n        </div>\n        <div class="teaser__subcontent">\n           <span class="teaser__metaInfo">\n               <i class="icon icon-tag-midGrey"></i>\n               '+
+((__t=( guide.typeLabel ))==null?'':_.escape(__t))+
+'\n           </span>\n        </div>\n    </div>\n</div>\n';
+}
+return __p;
+};

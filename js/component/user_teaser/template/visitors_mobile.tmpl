@@ -1,0 +1,17 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="userTeaser userTeaser-belowTablet">\n    ';
+ if (state.loading) { 
+__p+='\n        <div class="spinner u-sizeFill u-spaceTop u-spaceBottom"></div>\n    ';
+ } else if (state.empty) { 
+__p+='\n        <div class="js-users-empty rowSlider rowSlider-noResults"></div>\n    ';
+ } else { 
+__p+='\n        <div class="js-user-slider rowSlider__row">\n            <div class="js-users-list rowSlider__rowItem"></div>\n            <div class="rowSlider__wrap__seeMoreUsers">\n                <a class="seeMoreUsers" href="'+
+((__t=( link.all ))==null?'':_.escape(__t))+
+'">\n                    <div class="seeMoreUsers__wrap__userPicture">\n                        <span class="userPicture"></span>\n                    </div>\n                    <span class="seeMoreUsers__text">See all profile visitors</span>\n                </a>\n            </div>\n        </div>\n    ';
+ } 
+__p+='\n</div>\n';
+}
+return __p;
+};

@@ -1,0 +1,31 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ if (user.isAdmin) { 
+__p+='\n    <span class=\'membershipTooltip__text\'>\n        <span class=\'membershipTooltip__textTitle\'>InterNations Team Member</span>\n        Works at InterNations :-)<br/>\n        <a href=\''+
+((__t=( link.learnMoreAdmin ))==null?'':_.escape(__t))+
+'\'>Learn more</a>\n    </span>\n';
+ } else if (user.isAmbassador) { 
+__p+='\n    <span class=\'membershipTooltip__text\'>\n        <span class=\'membershipTooltip__textTitle\'>InterNations Ambassador '+
+((__t=( user.localcommunityName ))==null?'':_.escape(__t))+
+' Community</span>\n        Organizes and hosts the InterNations Official Events.<br/>\n        <a href=\''+
+((__t=( link.learnMoreAmbassador ))==null?'':_.escape(__t))+
+'\'>Learn more</a>\n    </span>\n';
+ } else if (user.isConsul) {
+__p+='\n    <span class=\'membershipTooltip__text\'>\n        <span class=\'membershipTooltip__textTitle\'>InterNations Consul</span>\n        Hosts monthly activities for one or more InterNations Groups.<br/>\n        <a href=\''+
+((__t=( link.learnMoreConsul ))==null?'':_.escape(__t))+
+'\'>Learn more</a>\n    </span>\n';
+ } else if (user.isNewcomerBuddy) {
+__p+='\n    <span class=\'membershipTooltip__text\'>\n        <span class=\'membershipTooltip__textTitle\'>InterNations Newcomers’ Buddy</span>\n        Welcomes new members on InterNations.<br/>\n        <a href=\''+
+((__t=( link.learnMoreNewcomerBuddy ))==null?'':_.escape(__t))+
+'\'>Learn more</a>\n    </span>\n';
+ } else if (user.isAlbatross) {
+__p+='\n    <span class=\'membershipTooltip__text\'>\n        <span class=\'membershipTooltip__textTitle\'>Albatross Member</span>\n        Enjoys all the benefits of our premium membership for a small fee.<br/>\n        <a href=\''+
+((__t=( link.learnMoreAlbatross ))==null?'':_.escape(__t))+
+'\'>Learn more</a>\n    </span>\n';
+ } 
+__p+='\n';
+}
+return __p;
+};

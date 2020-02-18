@@ -1,0 +1,21 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<img class="userPreview__image\n    ';
+ if (hasPhoto) { 
+__p+='\n        t-userImage\n    ';
+ } else { 
+__p+='\n        t-userImagePlaceholder userImagePlaceholder\n    ';
+ } 
+__p+='"\n    src="'+
+((__t=( attrs.src ))==null?'':_.escape(__t))+
+'"\n    width="'+
+((__t=( attrs.width ))==null?'':_.escape(__t))+
+'"\n    height="'+
+((__t=( attrs.height ))==null?'':_.escape(__t))+
+'"\n    alt="'+
+((__t=( attrs.alt ))==null?'':_.escape(__t))+
+'"\n    border="0"\n    />\n';
+}
+return __p;
+};

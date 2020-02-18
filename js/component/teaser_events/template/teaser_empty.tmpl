@@ -1,0 +1,23 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='<div class="teaser teaser-large teaser-fallback">\n    <div class="mediaObject mediaObject-wrapBelowTablet">\n        <div class="mediaObject__figure">\n            <img class="teaser__imageLarge" src="'+
+((__t=(img ))==null?'':_.escape(__t))+
+'" alt="" />\n        </div>\n        <div class="mediaObject__text">\n            ';
+ if (community.statistics.ambassadors > 0) { 
+__p+='\n                <h2 class="heading2">Next event coming soon - stay tuned!</h2>\n                <p>\n                    Have an idea for an upcoming event?\n                    Then <a href="'+
+((__t=( link.contactAmbassador ))==null?'':_.escape(__t))+
+'">contact your '+
+((__t=( community.name ))==null?'':_.escape(__t))+
+' Ambassador team!</a>\n                </p>\n            ';
+ } else { 
+__p+='\n                <h2 class="heading2">Become an Ambassador!</h2>\n                <p>Get involved and organize the next event in the '+
+((__t=( community.name ))==null?'':_.escape(__t))+
+' Community.</p>\n            ';
+ } 
+__p+='\n\n            <a class="btn btn-inline" href="'+
+((__t=( link.getInvolvedLink ))==null?'':_.escape(__t))+
+'">Get involved!</a>\n        </div>\n    </div>\n</div>\n';
+}
+return __p;
+};

@@ -1,0 +1,3 @@
+/* @flow */
+const ZINDEX_STICKY_HEADER = 9
+export const ZINDEX_ROLE_TOOLTIP = ZINDEX_STICKY_HEADER

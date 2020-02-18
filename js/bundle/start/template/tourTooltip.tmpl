@@ -1,0 +1,29 @@
+module.exports = function(obj){
+var __t,__p='',__j=Array.prototype.join,print=function(){__p+=__j.call(arguments,'');};
+with(obj||{}){
+__p+='';
+ /* allowHtmlVariables step.headline */ 
+__p+='\n<div class="t-guided-tour-tooltip tour '+
+((__t=( step.class || '' ))==null?'':_.escape(__t))+
+'">\n    <h2 class="tour__headline">'+
+((__t=( step.headline ))==null?'':__t)+
+'</h2>\n    <span class="tour__separator"></span>\n    <p class="tour__contentCopy">'+
+((__t=( step.content ))==null?'':_.escape(__t))+
+'</p>\n    <span class="tour__stepInfo">\n        ';
+ if (step.extraInfo) { 
+__p+='\n            '+
+((__t=( step.extraInfo ))==null?'':_.escape(__t))+
+'\n        ';
+ } else { 
+__p+='\n            ';
+ // -1 because of the first step that doesnt highlight anything 
+__p+='\n            Step '+
+((__t=( step.step - 1 ))==null?'':_.escape(__t))+
+' / 4\n        ';
+ } 
+__p+='\n    </span>\n    <button class="js-intro-next btn u-pullRight" type="button">\n        '+
+((__t=( (step.buttonCopy || 'Ok, got it!') ))==null?'':_.escape(__t))+
+'\n    </button>\n</div>\n';
+}
+return __p;
+};
